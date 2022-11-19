@@ -27,5 +27,4 @@ public class stockController {
         List<rawStock> rawDataList = rawStockMapper.getRawDataList();
         return rawDataList;
     }
-
 }
