@@ -11,14 +11,6 @@
 // **/
 //public class rawDataToData {
 //    public static List<rawStock> ToData(List<rawStock> rawDataList){
-//        List<rawStock> dataList = new ArrayList<>();
-//        for (int i = 0; i < rawDataList.size(); i++) {
-//            rawDataList.get(i).getDate();
-//            rawDataList.get(i).getName();
-//            rawDataList.get(i).getCode();
-//            rawDataList.get(i).getOpen();
-//            rawDataList.get(i).getHigh();
-//            rawDataList.get(i).();
 //
 //        }
 //    }

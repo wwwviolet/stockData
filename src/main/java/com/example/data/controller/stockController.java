@@ -28,8 +28,4 @@ public class stockController {
         return rawDataList;
     }
 
-//    @RequestMapping("/get")
-//    public String get(){
-//        return "ok";
-//    }
 }
