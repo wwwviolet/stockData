@@ -12,46 +12,51 @@ import java.util.Date;
 
 /**
  * @Author lyra
- * @Date 2022 11 19 10 13
+ * @Date 2022 11 23 14 13
  **/
 
+
+//沪深京 A 股的信息,在主界面展示,用于用户选股
 @Data
 @NoArgsConstructor
 @AllArgsConstructor
 @ToString
 public class rawStock implements Serializable {
-    private Date date;
-    private String name;
+    /**
+     *
+     * @param num           序号
+     * @param code          股票代码
+     * @param name          股票名称
+     * @param newPrice      最新价
+     * @param rAf           涨跌幅
+     * @param iAd           涨跌额
+     * @param volume        成交量
+     * @param turnover      成交额
+     * @param amplitude     振幅
+     * @param high          最高
+     * @param low           最低
+     * @param open          今开
+     * @param PRE           昨收
+     * @param volumeRatio   量比
+     * @param turnoverRate  换手率
+     */
+    private Integer num;
     private String code;
-    private Double open;
-    private Double high;
-    private Double low;
-    private Double close;
+    private String name;
+    private Double newPrice;
+    private Double rAf;
+    private Double iAd;
     private Integer volume;
     private Double turnover;
+    private Double amplitude;
+    private Double high;
+    private Double low;
+    private Double open;
+    private Double PRE;
+    private Double volumeRatio;
     private Double turnoverRate;
-    private Double MA5;
-    private Double MA10;
-    private Integer gold;
-    private Double goldDeathCha;
+    private Double peRatio;
+    private Double pbRatio;
 
-
-
-    @Override
-    public String toString() {
-        return "rawStock{" +
-                "date=" + date +
-                ", name='" + name + '\'' +
-                ", code='" + code + '\'' +
-                ", open=" + open +
-                ", high=" + high +
-                ", low=" + low +
-                ", close=" + close +
-                ", MA_5=" + MA5 +
-                ", MA_10=" + MA10 +
-                ", gold=" + gold +
-                ", gold_death_cha=" + goldDeathCha +
-                '}';
-    }
 
 }

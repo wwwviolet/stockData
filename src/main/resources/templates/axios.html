@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+<!--引用文件-->
+    <script src="./script/axios.min.js"></script>
+    <script src="./script/vue.js"></script>
+</head>
+<body>
+    <div id="app">
+        <p>{{msg}}</p>
+        <input type="text" v-model="msg" />{{msg}}
+        <button type="button" @click="axios1">点击</button>
+    </div>
+</body>
+<script type="text/javascript">
+
+//    axios({
+//        method : "POST",
+//        url : "getData",
+//        data : {
+//
+//        }
+//    })
+//        .then(function (value){
+//            console.log(value.data);
+//        })
+//        .catch(function (reason){
+//            console.log(reason);
+//        })
+    var vue = new Vue({
+        el : "#app",
+        data : {
+            msg : "toString"
+        },
+        methods : {
+            axios1 : function (){
+                axios({
+                    method : "POST",
+                    url : "getData",
+                    data : {
+
+                    }
+                })
+                    .then(function (value){
+                        console.log(value.data);
+                    })
+                    .catch(function (reason){
+                        console.log(reason);
+                    })
+            }
+        }
+    });
+</script>
+</html>
