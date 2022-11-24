@@ -19,5 +19,5 @@ public class User {
     private Integer id;
     private String uname;
     private String pwd;
-    private List<userStock> userStocks;
+    private List<userStock> userStocks; //1:n
 }

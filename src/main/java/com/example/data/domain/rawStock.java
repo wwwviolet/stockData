@@ -11,9 +11,9 @@ import java.io.Serializable;
 import java.util.Date;
 
 /**
- * @Author lyra
- * @Date 2022 11 23 14 13
- **/
+* @Author lyra
+* @Date 2022/11/24 21:02
+**/
 
 
 //沪深京 A 股的信息,在主界面展示,用于用户选股

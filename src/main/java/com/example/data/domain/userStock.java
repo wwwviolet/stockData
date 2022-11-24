@@ -8,15 +8,17 @@ import lombok.ToString;
 import java.util.Date;
 
 /**
- * @Author lyra
- * @Date 2022 11 22 16 23
- **/
+* @Author lyra
+* @Date 2022/11/24 12:35
+**/
 @Data
 @NoArgsConstructor
 @AllArgsConstructor
 @ToString
 //用户自选股
 public class userStock {
+    private String name;
+    private Integer code;
     private Date day;
     private Double open;
     private Double high;
@@ -27,6 +29,5 @@ public class userStock {
     private Double MA10;
     private Integer gold;
     private Double goldDeathCha;
-    private String name;
 
 }

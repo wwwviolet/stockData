@@ -4,9 +4,9 @@ import org.apache.ibatis.annotations.Mapper;
 import org.springframework.stereotype.Component;
 
 /**
- * @Author lyra
- * @Date 2022 11 23 13 34
- **/
+* @Author lyra
+* @Date 2022/11/24 12:35
+**/
 @Component
 @Mapper
 public interface UserMapper {
